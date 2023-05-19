@@ -2,12 +2,12 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
+    "vercel-build": "prisma generate && prisma migrate deploy",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.6.7",
